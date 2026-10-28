@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#14060a" />
+  <title>Julia Florentino Caldas | Acadêmica de Odontologia</title>
+  <meta name="description" content="Julia Florentino Caldas, acadêmica de Odontologia (6º período). Trajetória, áreas de interesse e conteúdo sobre saúde bucal." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="tooth" viewBox="0 0 100 100">
+        <path d="M50 10 C38 3 22 7 18 23 C15 35 22 47 24 61 C26 77 28 95 36 95 C44 95 44 75 50 75 C56 75 56 95 64 95 C72 95 74 77 76 61 C78 47 85 35 82 23 C78 7 62 3 50 10 Z"/>
+      </symbol>
+      <linearGradient id="champ" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#f0dcc6"/>
+        <stop offset="100%" stop-color="#c9a584"/>
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <!-- LOADER -->
+  <div class="loader" id="loader">
+    <svg viewBox="0 0 100 100" class="loader-tooth" aria-hidden="true">
+      <path pathLength="1" d="M50 10 C38 3 22 7 18 23 C15 35 22 47 24 61 C26 77 28 95 36 95 C44 95 44 75 50 75 C56 75 56 95 64 95 C72 95 74 77 76 61 C78 47 85 35 82 23 C78 7 62 3 50 10 Z" fill="none" stroke="url(#champ)" stroke-width="2" stroke-linejoin="round"/>
+    </svg>
+    <p>Julia Florentino Caldas</p>
+  </div>
+
+  <div class="progress" id="progress"></div>
+
+  <!-- TOPO -->
+  <header class="topbar">
+    <a href="#inicio" class="brand" aria-label="Início">
+      <span class="mono">JC</span>
+      <span class="brand-name">Julia Caldas</span>
+    </a>
+    <nav class="nav-links" id="navLinks" aria-label="Principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#trajetoria">Trajetória</a>
+      <a href="#areas">Áreas</a>
+      <a href="#saude-bucal">Saúde bucal</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false"><i></i><i></i></button>
+  </header>
+
+  <nav class="menu" id="menu" aria-label="Menu">
+    <a href="#inicio"><small>01</small>Início</a>
+    <a href="#sobre"><small>02</small>Sobre</a>
+    <a href="#trajetoria"><small>03</small>Trajetória</a>
+    <a href="#areas"><small>04</small>Áreas de interesse</a>
+    <a href="#saude-bucal"><small>05</small>Saúde bucal</a>
+    <a href="#contato"><small>06</small>Contato</a>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero-text">
+        <p class="eyebrow reveal">Acadêmica de Odontologia · 6º período</p>
+        <h1 class="reveal">Julia Florentino <em>Caldas</em></h1>
+        <p class="lead reveal">Estudante de Odontologia em [Instituição], movida por ciência, ética e atenção a cada pessoa. [Uma frase pessoal sobre o que ela busca na profissão.]</p>
+        <div class="cta reveal">
+          <a href="#trajetoria" class="btn btn-primary">Conhecer minha trajetória</a>
+          <a href="#contato" class="btn btn-ghost">Entrar em contato</a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" id="heroVisual">
+        <canvas id="tooth3d" aria-label="Modelo 3D de um dente que acompanha o movimento do mouse, do dedo ou do celular"></canvas>
+        <svg viewBox="0 0 100 100" class="fallback" aria-hidden="true"><use href="#tooth" fill="#f4ebe0" stroke="url(#champ)" stroke-width="1.2"/></svg>
+      </div>
+
+      <a href="#sobre" class="scroll-hint" aria-label="Rolar para baixo"><span></span></a>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="section paper" id="sobre">
+      <div class="wrap">
+        <p class="label reveal"><span>01</span> Sobre</p>
+        <h2 class="reveal">Formação com <em>propósito</em></h2>
+        <div class="about">
+          <div class="photo reveal">
+            <!-- TROCAR por: <img src="foto.jpg" alt="Julia Florentino Caldas" /> -->
+            <span>Foto<br />Julia</span>
+          </div>
+          <div class="about-body reveal">
+            <p>[Texto sobre a Julia: o que a levou a escolher a Odontologia, seus valores, o que busca aprender e como enxerga o cuidado com o paciente.]</p>
+            <dl class="facts">
+              <div><dt>Curso</dt><dd>Odontologia</dd></div>
+              <div><dt>Instituição</dt><dd>[Instituição]</dd></div>
+              <div><dt>Período atual</dt><dd>6º período</dd></div>
+              <div><dt>Previsão de formatura</dt><dd>[Ano]</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAJETÓRIA -->
+    <section class="section" id="trajetoria">
+      <div class="wrap">
+        <p class="label reveal"><span>02</span> Trajetória</p>
+        <h2 class="reveal">Passo a passo na <em>graduação</em></h2>
+        <div class="timeline" id="timeline">
+          <div class="step reveal"><time>[Ano]</time><div><h3>Início da graduação em Odontologia</h3><p>[Instituição, motivação e primeiras experiências.]</p></div></div>
+          <div class="step reveal"><time>[Ano]</time><div><h3>[Monitoria, liga acadêmica ou projeto de extensão]</h3><p>[O que fez e o que aprendeu.]</p></div></div>
+          <div class="step reveal"><time>[Ano]</time><div><h3>[Congresso, curso ou evento]</h3><p>[Tema e contribuição para a formação.]</p></div></div>
+          <div class="step reveal"><time>Hoje</time><div><h3>6º período</h3><p>[Disciplinas e atividades acadêmicas atuais.]</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ÁREAS DE INTERESSE -->
+    <section class="section paper" id="areas">
+      <div class="wrap">
+        <p class="label reveal"><span>03</span> Áreas de interesse</p>
+        <h2 class="reveal">O que mais <em>me move</em></h2>
+        <p class="sub reveal">Áreas de estudo e interesse ao longo da graduação.</p>
+        <div class="cards">
+          <article class="card spot reveal"><span class="num">01</span><h3>Dentística</h3><p>[Descrição curta do interesse.]</p></article>
+          <article class="card spot reveal"><span class="num">02</span><h3>Ortodontia</h3><p>[Descrição curta do interesse.]</p></article>
+          <article class="card spot reveal"><span class="num">03</span><h3>Periodontia</h3><p>[Descrição curta do interesse.]</p></article>
+          <article class="card spot reveal"><span class="num">04</span><h3>Endodontia</h3><p>[Descrição curta do interesse.]</p></article>
+          <article class="card spot reveal"><span class="num">05</span><h3>Odontopediatria</h3><p>[Descrição curta do interesse.]</p></article>
+          <article class="card spot reveal"><span class="num">06</span><h3>Cirurgia oral</h3><p>[Descrição curta do interesse.]</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SAÚDE BUCAL -->
+    <section class="section" id="saude-bucal">
+      <div class="wrap narrow">
+        <p class="label reveal"><span>04</span> Saúde bucal</p>
+        <h2 class="reveal">Cuidados que fazem <em>diferença</em></h2>
+        <p class="sub reveal">Informações gerais de educação em saúde.</p>
+
+        <div class="acc reveal">
+          <details>
+            <summary>Como escovar os dentes corretamente?</summary>
+            <p>Escove pelo menos duas vezes ao dia, por cerca de dois minutos, com creme dental fluoretado e escova de cerdas macias. Faça movimentos suaves, alcançando todas as faces dos dentes, e não esqueça de higienizar a língua.</p>
+          </details>
+          <details>
+            <summary>O fio dental é mesmo necessário?</summary>
+            <p>Sim. A escova não alcança bem o espaço entre os dentes, onde se acumulam placa bacteriana e restos de alimento. O uso diário do fio dental ajuda a prevenir cáries e inflamação na gengiva.</p>
+          </details>
+          <details>
+            <summary>Com que frequência devo ir ao dentista?</summary>
+            <p>Em geral, recomenda-se consultas de rotina periódicas. A frequência ideal varia de pessoa para pessoa e deve ser definida por um cirurgião-dentista, que avalia suas necessidades.</p>
+          </details>
+          <details>
+            <summary>A alimentação influencia nas cáries?</summary>
+            <p>Influencia. O que mais pesa é a frequência de contato do açúcar com os dentes ao longo do dia. Evitar beliscar doces o tempo todo e manter a higiene após as refeições ajuda a proteger o esmalte.</p>
+          </details>
+        </div>
+        <p class="note reveal">Conteúdo informativo. Não substitui a avaliação de um cirurgião-dentista.</p>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="section contact" id="contato">
+      <div class="wrap narrow center">
+        <p class="label reveal"><span>05</span> Contato</p>
+        <h2 class="reveal">Vamos <em>conversar</em></h2>
+        <p class="sub reveal">Dúvidas, troca de conhecimento ou parcerias acadêmicas.</p>
+
+        <div class="cta center-cta reveal">
+          <a class="btn btn-primary" id="waBtn" href="#" target="_blank" rel="noopener">Falar no WhatsApp</a>
+          <a class="btn btn-ghost" href="mailto:[email]">Enviar e-mail</a>
+        </div>
+
+        <ul class="info reveal">
+          <li><b>E-mail</b><span>[email]</span></li>
+          <li><b>Instagram</b><span>@[perfil]</span></li>
+          <li><b>Cidade</b><span>[Cidade, UF]</span></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Julia Florentino Caldas · Acadêmica de Odontologia</p>
+    <p class="fine">Site de caráter pessoal e acadêmico. Não oferece serviços odontológicos nem substitui a consulta com um cirurgião-dentista.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
